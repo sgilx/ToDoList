@@ -29,6 +29,10 @@ h1 {
     margin: 70px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 input {
     padding: 10px;
 }

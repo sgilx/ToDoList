@@ -18,6 +18,17 @@ h1 {
     margin: 70px;
 }
 
+.toDo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    background-size: cover;
+    background-image: url(notePad.jpg);
+    padding: 20px;
+    margin: 70px;
+}
+
 input {
     padding: 10px;
 }
@@ -25,3 +36,4 @@ input {
 button {
     margin-top: 10px;
 }
+

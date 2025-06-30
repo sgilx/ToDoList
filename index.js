@@ -2,6 +2,8 @@ const taskName = document.querySelector('#activity');
 const taskList = document.querySelector('#taskToDo');
 const form = document.querySelector('.addActivity');
 
+const deleteBtn = document.querySelector(delBtn);
+
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     const task = taskName.value;
@@ -14,6 +16,10 @@ form.addEventListener('submit', function(e) {
     newTask.append(checkBtn);
 
     const delBtn = document.createElement('button');
-    checkBtn.innerHTML('x');
+    const del = document.createTextNode('x');
+    delBtn.append(del);
     newTask.append(delBtn);
+
+    taskName.value = '';
 });
+

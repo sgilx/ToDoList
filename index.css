@@ -72,39 +72,3 @@ li input[type='checkbox']:checked + span {
     text-decoration: line-through;
     color: #87ae73;
 }
-
-/* resizes for smartphone screens */
-@media only screen and (max-width: 600px) {
-    * {
-        font-size: 2rem;
-    }
-    form, div {
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-}
-
-/* resizes for tablet screens */
-@media only screen and (max-width: 768px) {
-    * {
-        font-size: 1.9rem;
-    }
-    form, div {
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-}
-
-
-@media only screen and (min-width: 992px) {
-    * {
-        font-size: 1.8rem;
-    }
-    form, div {
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-}

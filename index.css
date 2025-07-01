@@ -86,7 +86,7 @@ li input[type='checkbox']:checked + span {
 }
 
 /* resizes for tablet screens */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     * {
         font-size: 2rem;
     }
@@ -95,7 +95,7 @@ li input[type='checkbox']:checked + span {
         flex-wrap: wrap;
         max-width: 100%;
     }
-}
+} */
 
 /* resizes for pc and laptop screens */
 @media only screen and (max-width: 768px) {

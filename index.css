@@ -17,7 +17,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: #dcd0ff;
     margin: 70px;
     border-radius: 8px;
 }
@@ -25,7 +25,7 @@ h1 {
 /* button styling for add task button */
 .addActivity button {
     border-radius: 8px;
-    background-color: #6495ED;
+    background-color: #b19cd9;
     padding: 15px;  
     margin-top: 10px;
 }
@@ -41,7 +41,7 @@ h1 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     background-size: cover;
     background-image: url(notePad.jpg);
     padding: 20px;
@@ -71,4 +71,40 @@ li button {
 li input[type='checkbox']:checked + span {
     text-decoration: line-through;
     color: #87ae73;
+}
+
+/* resizes for smartphone screens */
+@media screen and (max-width: 320px) {
+    * {
+        font-size: 2rem;
+    }
+    form, div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+}
+
+/* resizes for tablet screens */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    * {
+        font-size: 2rem;
+    }
+    form, div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+}
+
+/* resizes for pc and laptop screens */
+@media screen and (max-width: 796px) {
+    * {
+        font-size: 2rem;
+    }
+    form, div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
 }

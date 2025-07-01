@@ -5,7 +5,7 @@
 }
 
 form, div {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 h1 {
@@ -74,7 +74,7 @@ li input[type='checkbox']:checked + span {
 }
 
 /* resizes for smartphone screens */
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
     * {
         font-size: 2rem;
     }
@@ -86,7 +86,7 @@ li input[type='checkbox']:checked + span {
 }
 
 /* resizes for tablet screens */
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
     * {
         font-size: 2rem;
     }
@@ -98,7 +98,7 @@ li input[type='checkbox']:checked + span {
 }
 
 /* resizes for pc and laptop screens */
-@media screen and (max-width: 796px) {
+@media only screen and (max-width: 768px) {
     * {
         font-size: 2rem;
     }

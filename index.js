@@ -6,18 +6,22 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
     const task = taskName.value;
     const newTask = document.createElement('li');
-    newTask.innerText = task;
 
     const checkBtn = document.createElement('input');
     checkBtn.setAttribute('type', 'checkbox');
+
+    const taskInfo = document.createElement('span');
+    taskInfo.innerText = task;
 
     const delBtn = document.createElement('button');
     delBtn.innerText = 'x';
 
     delBtn.addEventListener('click', delTask);
 
-    newTask.insertBefore(checkBtn, newTask.firstChild);
+    newTask.append(checkBtn);
+    newTask.append(taskInfo);
     newTask.append(delBtn);
+    
     taskList.append(newTask);
 
     taskName.value = '';

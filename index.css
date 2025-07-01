@@ -5,7 +5,7 @@
 }
 
 form, div {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 h1 {
@@ -86,21 +86,21 @@ li input[type='checkbox']:checked + span {
 }
 
 /* resizes for tablet screens */
-/* @media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
     * {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
     form, div {
         flex-direction: column;
         flex-wrap: wrap;
         max-width: 100%;
     }
-} */
+}
 
-/* resizes for pc and laptop screens */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (min-width: 992px) {
     * {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     form, div {
         flex-direction: column;
